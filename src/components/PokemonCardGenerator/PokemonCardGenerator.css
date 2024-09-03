@@ -1,0 +1,104 @@
+.button {
+  padding: 12px 24px;
+  font-size: 16px;
+  margin-left: auto;
+  margin-right: auto;
+  color: #ffffff;
+  background-color: #007bff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.button:hover {
+  background-color: #0056b3;
+  transform: translateY(-2px);
+}
+
+.cards.container {
+  margin-top: 100px;
+  margin-bottom: 100px;
+  width: 100vw;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 80px;
+  justify-content: space-around;
+  transition: all 0.5s ease;
+}
+
+.card {
+  height: 300px;
+  width: 250px;
+  backdrop-filter: blur(5px);
+  background-color: rgba(255, 255, 255, 0.233);
+  border-radius: 10px;
+  position: relative;
+  display: flex;
+
+}
+
+.pagination {
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  margin-bottom: 100px;
+  max-width: 300px;
+}
+
+.cardbg{
+    position: relative;
+    height: 220px;
+    width: 220px;
+    background-image: url(https://png.pngtree.com/thumb_back/fh260/background/20210515/pngtree-abstract-cloud-fog-gold-granules-dust-background-image_715022.jpg);
+    border-radius: 10px;
+    margin-top: 10px;
+    left: calc((250px - 220px) / 2);
+}
+
+.cardimg{
+    position: absolute;
+    left: calc((250px - 200px) / 2);
+    top: calc((230px - 200px) / 2);
+}
+
+.cardimg img{
+    height: 200px;
+    width: 200px;
+}
+
+.cardname{
+    align-self: center;
+    margin-top: 10px;
+}
+.cardname p{
+    font-size: x-large;
+    color: white;
+    font-weight: 700;
+}
+
+.loading{
+    font-size: 10vw;
+    text-align: center;
+    color: white;
+    opacity: 0;
+    animation: loading 4s infinite;
+    transition: all 0.5s ease;
+}
+
+@keyframes loading {
+    0% {
+        opacity: 0;
+    }
+    25% {
+        opacity: 1;
+    }
+    75% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
